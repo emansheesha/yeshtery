@@ -1,0 +1,177 @@
+:root {
+
+    --primary-color: #542e90;
+    --secondary-color: #fff100;
+
+}
+
+.main-cards h2.similar-products {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-cards h2.similar-products {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+.main-cards p.sub-products {
+    color: #575756;
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: start;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-cards p.sub-products {
+        font-size: 16px;
+    }
+}
+
+.main-cards .card-flow {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: var(--primary-color);
+}
+
+.main-cards .card-flow::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    width: 200px;
+
+
+}
+
+.main-cards .card::before {
+    content: (url('../../imgs/360.svg'));
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: white;
+    padding: 6px 7px 3px;
+    border: 1px solid rgb(228, 224, 224);
+    border-radius: 10%;
+
+
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.main-cards .card:hover::before {
+    cursor: pointer;
+    -webkit-animation: spin 1s linear;
+    -moz-animation: spin 1s linear;
+    animation: spin 1s linear;
+
+
+}
+
+.main-cards .card {
+    background-color: white;
+    border-radius: 15px;
+    height: 450px;
+    opacity: 1;
+    padding: 8px 7px 11px;
+    position: relative;
+    border-color: rgb(250, 246, 246);
+    min-width: 310px;;
+    margin-bottom: 50px;
+}
+
+.main-cards .card-img-top {
+    border-radius: 15px;
+    height: 250px;
+
+}
+
+.main-cards .card-text {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #1d1d1b;
+    display: -webkit-box;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+   
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-cards .product-price {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-cards .product-price {
+        font-size: 12px;
+    }
+}
+
+.main-cards .product-price {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-cards .prev-price {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-cards .prev-price {
+        font-size: 10px;
+    }
+}
+
+.main-cards .prev-price{
+    color: #575756;
+    font-size: 16px;
+    // font-weight: lighter;
+    text-align: left;
+}
+.main-cards .img-logo {
+    width: 80%;
+    height: 80%;
+   
+}
+
+.main-cards .sale-percentage {
+    background-color: var(--secondary-color);
+    padding: 1px 15px;
+    font-size: 12px;
+    display:flex;
+    align-self:center;
+    border-radius: 3px;
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+:root {
+
+    --primary-color: #542e90;
+    --secondary-color: #fff100;
+
+}
+
+.footer {
+    background-color: rgb(34, 33, 33);
+    color: #fff;
+
+}
+
+.footer .text {
+    text-align: start;
+    color: #fff;
+    font-size: 1.22rem;
+    font-weight: medium;
+}
+
+.footer h3, .footer ul {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer .subscribe {
+    color: #fff;
+    text-align: start;
+}
+.footer form {
+    display: flex;
+   
+}
+.footer .footer-nav {
+    text-align: start;
+}
+.footer ul li {
+    padding: 10px 0px;
+}
+.footer input {
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 32px;
+    flex: 1;
+    padding: 5px 0px 5px 14px;
+    min-width: 100%;
+    outline: none;
+}
+footer ul {
+    list-style: none
+}
+.footer ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+a, a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.footer .btn-subscribe {
+    position: relative;
+    right:150px;
+    align-items: center;
+    background: #fff200 0 0 no-repeat padding-box;
+    border: none;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 700;
+    justify-content: center;
+    outline: none;
+    padding: 13px 30px;
+    text-align: center;
+    
+
+}
+.footer .icon {
+    max-width: 50px ;
+    max-height: 50px ;
+    margin-right: 10px;
+} 
+.footer .copyright {
+    font-size: 18px;
+    font-weight: 500;
+}

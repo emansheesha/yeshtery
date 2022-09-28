@@ -1,0 +1,87 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "shirt.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 2,
+      "img": "shoes1.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 3,
+      "img": "hat.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 4,
+      "img": "jacket.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 5,
+      "img": "shoes.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 6,
+      "img": "shirt.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 956,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    },
+    {
+      "id": 7,
+      "img": "shirt.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4
+    }
+  ],
+  "user-cart": [
+    {
+      "id": 2,
+      "img": "shoes1.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4,
+      "quantity": 5
+    }
+  ]
+}
