@@ -9,7 +9,10 @@
   margin: 0px;
 }
 
+.space-boundary {
+  margin: 250px auto;
 
+}
 
 .App-logo {
   height: 40vmin;

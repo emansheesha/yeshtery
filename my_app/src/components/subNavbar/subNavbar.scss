@@ -84,6 +84,11 @@ cursor: pointer;
     padding-right: 25px;
     position: relative;
 }
+@media (min-width: 320.98px) and (max-width: 770px) {
+.logo-container {
+    display: none;
+}
+}
 .search-input {
     border: none;
     color: rgb(167, 169, 172);

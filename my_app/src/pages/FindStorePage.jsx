@@ -4,9 +4,9 @@ export function FindStorePage() {
 
     return (
         <>
-         <br/>
-         <br/>
-        <FindStore />
+            <div className="space-boundary">
+                <FindStore />
+            </div>
         </>
     )
 }

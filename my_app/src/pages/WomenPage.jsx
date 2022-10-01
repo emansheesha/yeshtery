@@ -3,8 +3,9 @@ export function WomenPage() {
 
     return (
         <>
-        <br/> <br/> 
-        Women Page
+        
+       <div className="space-boundary"> Women Page</div>
+         
         </>
     )
 }

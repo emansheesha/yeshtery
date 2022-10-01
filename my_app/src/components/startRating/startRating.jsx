@@ -8,7 +8,7 @@ class StarRating extends React.Component {
         let rate = this. props.rate;
         
         let ratingChanged = (newRating) => {
-            console.log(newRating);
+            // console.log(newRating);
         };
         return (
             <div className="d-flex  align-items-center">

@@ -4,9 +4,10 @@ export function TrackOrderPage() {
 
     return (
         <>
-         <br/>
-         <br/>
-        <TrackOrder />
+            <div className="space-boundary">
+                <TrackOrder />
+            </div>
+
         </>
     )
 }

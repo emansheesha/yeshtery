@@ -4,8 +4,9 @@ export function ContatUsPage() {
 
     return (
         <>
-        <br/> <br/> 
-        <ContactUs />
+            <div className="space-boundary">
+                <ContactUs />
+            </div>
         </>
     )
 }

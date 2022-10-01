@@ -6,8 +6,9 @@ class Header extends React.Component {
         this.props.handleDelete(product);
     }
     render() {
-        console.log(this.props.cart)
+        // console.log(this.props.cart)
         const products = this.props.cart;
+        let total=0;
         return (
             <div className="header">
                 <div className="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -18,13 +19,15 @@ class Header extends React.Component {
 
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div className="offcanvas-header">
-                        
+
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
                         <h3 className="cart-header">My Cart</h3>
                         {
-                            products?.map(product => (
+                            products?.map(product =>{
+                                total += product.quantity * product.price
+                                 return (
                                 <div className="cart-item" key={product.id}>
                                     <div className="cart-img">
                                         <img src={require(`../../imgs/${product.img}`)} className="img-fluid img-cart" />
@@ -44,13 +47,14 @@ class Header extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            ))
+                            )})
                         }
-
+                        <p className="cart_total">Total:{total} </p>
+                        
                     </div>
                 </div>
-            </div>
-        );
+                </div>
+                );
     }
 }
 export default Header;

@@ -2,6 +2,7 @@
     --primary-color: #542e90;
     --secondary-color: #fff100;
 }
+
 // .header {
 //     background: #000;
 //     color: white
@@ -13,6 +14,7 @@
     margin-bottom: 27px;
     text-align: center;
 }
+
 .cart-item {
     grid-column-gap: 16px;
     background: #fff 0 0 no-repeat padding-box;
@@ -24,8 +26,9 @@
     margin-bottom: 14px;
     padding: 8px;
     width: 100%;
-    color:black;
+    color: black;
 }
+
 .item-remove {
     background: #fff200 0 0 no-repeat padding-box;
     border: none;
@@ -38,7 +41,31 @@
     margin-right: 6px;
     max-width: 120px;
 }
-.item {
+
+@media (min-width: 320.98px) and (max-width: 575.98px) {
+    .header .cart-item {
+        border-radius: 15px;
+        grid-template-columns: 69px auto;
+        height: 110px;
+        padding: 8px 16px 8px 8px;
+    }
+
+    .header .item-price {
+
+        font-size: 12px;
+    }
+
+    .header .item-remove {
+
+        font-size: 10px;
+        height: 24px;
+        padding: 5px 18px;
+        width: 80px;
+
+    }
+}
+
+.header .item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,10 +75,25 @@
     width: 100%;
 }
 
-.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
-  
-    --bs-offcanvas-width: 500px; 
+.header .cart_total {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
 }
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+
+    --bs-offcanvas-width: 500px;
+}
+
 .item-description {
     color: #1d1d1b;
     font-size: 14px;
@@ -64,15 +106,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .img-cart {
     border-radius: 20px;
 }
+
 .item-quantity {
     color: #3c3c3b;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 0;
 }
+
 .item-price {
     color: var(--primary-color);
     font-size: 20px;
@@ -80,6 +125,7 @@
     margin-bottom: 0;
 
 }
-.item {
+
+.header .item {
     text-align: start;
 }

@@ -3,14 +3,21 @@ import React from "react";
 import Header from "../shoppingCart/shoppingCart";
 import './subNavbar.scss';
 class SubNavbar extends React.Component {
+    state={
+        value:''
+    }
     getQuantity = () => {
         let qt = 0;
         const qtArray = this.props.cart.map(item => item.quantity);
-        console.log(qtArray);
+        // console.log(qtArray);
         qt = qtArray.join('+');
-        console.log(eval(qt));
+        // console.log(eval(qt));
         return eval(qt);
 
+
+    }
+    handleChange=(event)=>{
+       this.setState({value: event.target.value}) ;
 
     }
     render() {
@@ -19,13 +26,14 @@ class SubNavbar extends React.Component {
             <div className="subNavbar">
                 <div className="container my-3">
                     <div className="row w-100">
-                        <div className="col-4">
+                        <div className="col-md-4 col-8">
                             <form className="search-container">
-                                <input type="text" className="search-input" placeholder="Search" />
+                                <input type="text" className="search-input" defaultValue={this.state.value} 
+                                onChange={(e)=>this.handleChange(e)} placeholder="Search" />
                                 {/* <button type="submit" className="search_button me-auto">Search</button> */}
                             </form>
                         </div>
-                        <div className="col-4">
+                        <div className="col-4 logo-container">
                             <img src={require(`../../imgs/adidas.png`)} alt='logo' className="img-fluid logo" />
                         </div>
                         <div className="col-4  d-flex justify-content-between align-items-center">

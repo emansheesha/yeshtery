@@ -16,8 +16,8 @@ class MainCards extends React.Component {
         (async () => {
             const products = await getProducts();
 
-            this.setState({ products: products });
-            console.log(this.state.products);
+            this.setState({ products: products },()=>{});
+            // console.log(this.state.products);
         })();
 
 

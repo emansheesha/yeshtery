@@ -2,43 +2,94 @@
   "products": [
     {
       "id": 1,
-      "img": "shirt.png",
+      "img": "shoes.png",
       "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "price": 9568,
       "prevPrice": 9861,
       "sale": 30,
       "logo": "adidas.png",
-      "rate": 4
+      "rate": 4,
+      "subimgs": [
+        "shoes2.png",
+        "shoes3.png",
+        "shoes4.png",
+        "shoes5.png",
+        "shoes.png"
+      ],
+      "color": [
+        "shoes.png"
+        
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ]
     },
     {
       "id": 2,
-      "img": "shoes1.png",
-      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "price": 9568,
-      "prevPrice": 9861,
-      "sale": 30,
-      "logo": "adidas.png",
-      "rate": 4
-    },
-    {
-      "id": 3,
-      "img": "hat.png",
-      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "price": 9568,
-      "prevPrice": 9861,
-      "sale": 30,
-      "logo": "adidas.png",
-      "rate": 4
-    },
-    {
-      "id": 4,
       "img": "jacket.png",
       "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "price": 9568,
       "prevPrice": 9861,
       "sale": 30,
       "logo": "adidas.png",
-      "rate": 4
+      "rate": 4,
+      "subimgs": [
+        "jacket.png",
+        "jacket1.png",
+        "jacket2.png",
+        "jacket3.png",
+        "jacket.png"
+      ],
+      "color": [
+        "jacket.png"
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "crocs.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4,
+      "subimgs": ["crocs.png",
+      "crocs.png"
+    ],
+      "color": [
+        "crocs.png"
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ]
+    },
+    {
+      "id": 4,
+      "img": "crocs.png",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "price": 9568,
+      "prevPrice": 9861,
+      "sale": 30,
+      "logo": "adidas.png",
+      "rate": 4,
+      "subimgs": ["crocs.png"],
+      "color": [
+        "crocs.png"
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ]
     },
     {
       "id": 5,
@@ -48,28 +99,50 @@
       "prevPrice": 9861,
       "sale": 30,
       "logo": "adidas.png",
-      "rate": 4
+      "rate": 4,
+      "subimgs": [
+        "shoes2.png",
+        "shoes3.png",
+        "shoes4.png",
+        "shoes5.png",
+        "shoes.png"
+      ],
+      "color": [
+        "shoes.png"
+        
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ]
     },
     {
       "id": 6,
-      "img": "shirt.png",
+      "img": "jacket.png",
       "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
       "price": 956,
       "prevPrice": 9861,
       "sale": 30,
       "logo": "adidas.png",
-      "rate": 4
-    },
-    {
-      "id": 7,
-      "img": "shirt.png",
-      "description": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      "price": 9568,
-      "prevPrice": 9861,
-      "sale": 30,
-      "logo": "adidas.png",
-      "rate": 4
+      "rate": 4,
+      "subimgs": [
+        "jacket.png",
+        "jacket1.png",
+        "jacket2.png",
+        "jacket3.png",
+        "jacket.png"
+      ],
+      "color": [
+        "jacket.png"
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "small"
+      ]
     }
+   
   ],
   "user-cart": [
     {
@@ -81,6 +154,20 @@
       "sale": 30,
       "logo": "adidas.png",
       "rate": 4,
+      "subimgs": [
+        "shirt.png",
+        "adidas.png",
+        "shirt.png",
+        "shoes1.png"
+      ],
+      "color": [
+        "shoes1.png"
+      ],
+      "size": [
+        "xlarge",
+        "large",
+        "medium"
+      ],
       "quantity": 5
     }
   ]

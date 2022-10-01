@@ -3,8 +3,9 @@ export function KidsPage() {
 
     return (
         <>
-        <br/> <br/> 
-        Kids Page
+            <div className="space-boundary">
+                Kids Page
+            </div>
         </>
     )
 }

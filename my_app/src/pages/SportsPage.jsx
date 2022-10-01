@@ -3,8 +3,9 @@ export function SportsPage() {
 
     return (
         <>
-        <br/> <br/> 
-        Sports Page
+            <div className="space-boundary">
+                Sports Page
+            </div>
         </>
     )
 }

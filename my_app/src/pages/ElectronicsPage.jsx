@@ -3,8 +3,10 @@ export function ElectronicsPage() {
 
     return (
         <>
-        <br/> <br/> 
-        Electronics Page
+            <div className="space-boundary">
+
+                Electronics Page
+            </div>
         </>
     )
 }

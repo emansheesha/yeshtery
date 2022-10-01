@@ -42,18 +42,19 @@ class App extends React.Component {
     })();
     (async () => {
       const cartProduct = await GetProduct();
-      console.log(cartProduct);
+      // console.log(cartProduct);
       this.setState({ cart: cartProduct }, () => { })
     })();
   }
   handleProduct = (product) => {
-    console.log(product);
+    // console.log(product);
+    this.setState({ product }, () => { })
     // console.log(GetProduct());
 
   }
   handleAddCard = (product) => {
     const addedProduct = this.state.cart.find((singleProductInCart) => { return singleProductInCart.id === product.id });
-    console.log(addedProduct, product, this.state.cart)
+    // console.log(addedProduct, product, this.state.cart)
     if (this.state.cart.length == 0) {
       const newCart = [];
       newCart.push(product);
@@ -62,7 +63,7 @@ class App extends React.Component {
     }
 
     else if (addedProduct) {
-      console.log('founded');
+      // console.log('founded');
       const cart = this.state.cart.map(item => item.id === product.id
         ? {
           ...item,
@@ -72,16 +73,17 @@ class App extends React.Component {
       )
 
 
-      console.log(cart)
-      this.setState({ cart }, () => console.log());
+      // console.log(cart)
+      this.setState({ cart }, () => {});
       const quant= addedProduct.quantity + product.quantity ;
-      console.log(quant)
+      // console.log(quant)
       EditProduct({...addedProduct,quantity:quant});
 
     }
     else {
       const newCart = [...this.state.cart, product];
       this.setState({ cart: newCart }, () => { console.log() });
+      AddProduct(product);
 
     }
 

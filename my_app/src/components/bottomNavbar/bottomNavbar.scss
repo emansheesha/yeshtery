@@ -25,8 +25,14 @@
     white-space: nowrap;
 }
 
-.bottom_navbar .nav_link:hover{
+.bottom_navbar .nav_link:hover {
     color: rgb(207, 98, 98);
+}
+
+@media (min-width: 320.98px) and (max-width: 660px) {
+    .bottom_navbar {
+        display: none;
+    }
 }
 
 .bottom_navbar .wrapper {

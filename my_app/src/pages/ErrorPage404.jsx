@@ -3,8 +3,9 @@ export function ErrorPage404() {
 
     return (
         <>
-            <br /><br />
-            Error Page
+            <div className="space-boundary">
+                Error Page
+            </div>
         </>
 
     )
